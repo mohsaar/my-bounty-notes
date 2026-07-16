@@ -16,7 +16,9 @@ Personal knowledge base and collection of bug bounty methodologies, payloads, an
 - **Commands:** Keep your one-liners and scripts documented for quick access.
 
 ## 🔗 Related
-- [Vulnerability-Vault](https://github.com/mohsaar/Vulnerability-Vault) - My findings and write-ups.
+
+- [Vulnerability-Vault](https://github.com/mohsaar/Vulnerability-Vault) - A vulnerable lab I created for practice and testing.
+- [Medium](https://medium.com/@0xmohsaar) - My write-ups and detailed security analysis.
 
 ---
 *Stay curious, stay ethical.*
