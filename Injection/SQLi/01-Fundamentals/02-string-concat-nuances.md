@@ -61,6 +61,6 @@ A naive WAF regex scanning the raw request body for the literal substring `UNION
  
 ## Practical Lab Verification
  
-- [Lab 10 — UNION attack, retrieving multiple values in a single column](../07-PortSwigger-Labs-Writeups/in-band/lab-10-union-single-column-multiple-values.md)
-- [Lab 18 — Filter bypass via XML encoding](../07-PortSwigger-Labs-Writeups/filter-bypass/lab-18-xml-encoding-filter-bypass.md)
+- [Lab 10 — UNION attack, retrieving multiple values in a single column](https://portswigger.net/web-security/sql-injection/union-attacks/lab-retrieve-multiple-values-in-single-column)
+- [Lab 18 — Filter bypass via XML encoding](https://portswigger.net/web-security/sql-injection/lab-sql-injection-with-filter-bypass-via-xml-encoding)
  
