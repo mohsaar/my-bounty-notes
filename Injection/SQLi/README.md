@@ -1,1 +1,49 @@
-
+# PortSwigger SQLi Labs — Practical Lab Exercises
+ 
+This section is **applied verification only**. The mechanics, DBMS nuances, and hunting methodology are taught once, in depth, in the core reference directories (`01-Fundamentals/`, `02-Vulnerability-Types/`, `03-Advanced-Techniques/`, `04-DBMS-Specific/`, `05-Bypasses-and-WAF/`, `06-Hunting-Methodology/`). Each exercise below states the objective and payload concisely, links back to the relevant core doc for the "why," and adds a tightened, exercise-specific **Bug Bounty Relevance** note.
+ 
+## In-Band (Error-Based & UNION-Based)
+ 
+| # | Exercise | Difficulty | Core Concept |
+|---|---|---|---|
+| 01 | [WHERE clause hidden data](in-band/lab-01-where-clause-hidden-data.md) | Apprentice | Tautology-based filter bypass |
+| 02 | [Login bypass](in-band/lab-02-login-bypass.md) | Apprentice | Comment-based auth logic bypass |
+| 03 | [DBMS version — Oracle](in-band/lab-03-oracle-dbms-version.md) | Practitioner | `dual` table, DBMS fingerprinting |
+| 04 | [DBMS version — MySQL/MSSQL](in-band/lab-04-mysql-mssql-dbms-version.md) | Practitioner | Comment syntax dialects, `@@version` |
+| 05 | [Listing DB contents — non-Oracle](in-band/lab-05-listing-db-contents-non-oracle.md) | Practitioner | `information_schema` enumeration |
+| 06 | [Listing DB contents — Oracle](in-band/lab-06-listing-db-contents-oracle.md) | Practitioner | `all_tables` / `all_tab_columns` |
+| 07 | [UNION — column count](in-band/lab-07-union-column-count.md) | Practitioner | `NULL` probing, `ORDER BY` method |
+| 08 | [UNION — finding a text column](in-band/lab-08-union-finding-text-column.md) | Practitioner | Type-compatibility & reflection |
+| 09 | [UNION — retrieving data from other tables](in-band/lab-09-union-retrieving-data-other-tables.md) | Practitioner | End-to-end extraction chain |
+| 10 | [UNION — multiple values in a single column](in-band/lab-10-union-single-column-multiple-values.md) | Practitioner | String folding / concatenation |
+| 13 | [Visible error-based SQLi](in-band/lab-13-visible-error-based.md) | Practitioner | `CAST()` type-conversion leakage |
+ 
+## Blind (Boolean-Based, Conditional Errors, Time-Based)
+ 
+| # | Exercise | Difficulty | Core Concept |
+|---|---|---|---|
+| 11 | [Conditional responses](blind/lab-11-blind-conditional-responses.md) | Practitioner | Boolean content-differential oracle |
+| 12 | [Conditional errors](blind/lab-12-blind-conditional-errors.md) | Practitioner | Induced-error (status-code) oracle |
+| 14 | [Time delays](blind/lab-14-blind-time-delays.md) | Practitioner | `pg_sleep()` syntax bridging |
+| 15 | [Time delays + information retrieval](blind/lab-15-blind-time-delays-information-retrieval.md) | Practitioner | Stacked queries + timing extraction |
+ 
+## Out-of-Band (OAST)
+ 
+| # | Exercise | Difficulty | Core Concept |
+|---|---|---|---|
+| 16 | [OOB interaction](oob/lab-16-oob-interaction.md) | Practitioner | XXE-triggered DNS callback |
+| 17 | [OOB data exfiltration](oob/lab-17-oob-data-exfiltration.md) | Practitioner | Subdomain-encoded data exfil |
+ 
+## Filter / WAF Bypass
+ 
+| # | Exercise | Difficulty | Core Concept |
+|---|---|---|---|
+| 18 | [Filter bypass via XML encoding](filter-bypass/lab-18-xml-encoding-filter-bypass.md) | Practitioner | Parser-differential evasion |
+ 
+## Business Logic / Auth Bypass
+*Pending future batches*
+ 
+---
+ 
+**Navigation tip:** Start in the core directories if you want to learn a technique from first principles. Use this index only once you already understand the mechanic and want a concrete, hands-on checkpoint to verify your understanding.
+ 
