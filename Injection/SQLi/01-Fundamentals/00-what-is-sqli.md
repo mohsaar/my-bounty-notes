@@ -35,6 +35,6 @@ Mature frameworks and ORMs default to parameterized queries, yet SQLi persists a
 - A single successful injection can cascade into full database compromise, authentication bypass, or — via stacked queries and OS-level function abuse — remote code execution, making it consistently one of the highest-severity vulnerability classes when found.
 ## Practical Lab Verification
  
-- [Lab 01 — WHERE clause hidden data](../07-PortSwigger-Labs-Writeups/in-band/lab-01-where-clause-hidden-data.md)
-- [Lab 02 — Login bypass](../07-PortSwigger-Labs-Writeups/in-band/lab-02-login-bypass.md)
+- [Lab 01 — WHERE clause hidden data](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
+- [Lab 02 — Login bypass](https://portswigger.net/web-security/sql-injection/lab-login-bypass)
  
