@@ -68,5 +68,5 @@ Note the placement discipline required here: the table reference (`FROM users`) 
  
 ## Practical Lab Verification
  
-- [Lab 15 — Blind SQL injection with time delays and information retrieval](../07-PortSwigger-Labs-Writeups/blind/lab-15-blind-time-delays-information-retrieval.md)
+- [Lab 15 — Blind SQL injection with time delays and information retrieval](https://portswigger.net/web-security/sql-injection/blind/lab-time-delays-info-retrieval)
  
