@@ -55,9 +55,8 @@ See `01-Fundamentals/02-string-concat-nuances.md` for the full breakdown (`CONCA
 2. Try `SELECT @@version` vs `SELECT version()` — a successful `@@version` suggests **MySQL or MSSQL**; a successful `version()` suggests **PostgreSQL or MySQL**. Cross-check with comment syntax (`#` working confirms MySQL) and `information_schema` behavior to disambiguate.
 3. Once the DBMS is confirmed, switch immediately to that DBMS's specific function set for all subsequent extraction, timing, and OOB payloads — do not continue probing with generic/ANSI syntax once fingerprinting is complete.
 ## Full DBMS-Specific Guides
- 
-- [MySQL](mysql.md)
-- [PostgreSQL](postgresql.md)
-- [MSSQL](mssql.md)
-- [Oracle](oracle.md)
- 
+
+* **[MySQL Guide](04-DBMS-Specific/mysql.md)** — Syntax dialects, comment styles (`#`, `-- `, `/* */`), and string concatenation nuances.
+* **[PostgreSQL Guide](04-DBMS-Specific/postgresql.md)** — Type casting, procedural blocks, and `pg_sleep()` time-delay injections.
+* **[MSSQL Guide](04-DBMS-Specific/mssql.md)** — Stacked queries, error-based extraction via `CONVERT()`, and xp_cmdshell concepts.
+* **[Oracle Guide](04-DBMS-Specific/oracle.md)** — The mandatory `dual` table rules, string limitations, and OAST data exfiltration.
