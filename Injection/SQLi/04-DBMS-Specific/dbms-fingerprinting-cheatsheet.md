@@ -56,7 +56,7 @@ See `01-Fundamentals/02-string-concat-nuances.md` for the full breakdown (`CONCA
 3. Once the DBMS is confirmed, switch immediately to that DBMS's specific function set for all subsequent extraction, timing, and OOB payloads — do not continue probing with generic/ANSI syntax once fingerprinting is complete.
 ## Full DBMS-Specific Guides
 
-* **[MySQL Guide](04-DBMS-Specific/mysql.md)** — Syntax dialects, comment styles (`#`, `-- `, `/* */`), and string concatenation nuances.
-* **[PostgreSQL Guide](04-DBMS-Specific/postgresql.md)** — Type casting, procedural blocks, and `pg_sleep()` time-delay injections.
+* **[MySQL Guide](../04-DBMS-Specific/mysql.md)** — Syntax dialects, comment styles (`#`, `-- `, `/* */`), and string concatenation nuances.
+* **[PostgreSQL Guide](../04-DBMS-Specific/postgresql.md)** — Type casting, procedural blocks, and `pg_sleep()` time-delay injections.
 * **[MSSQL Guide](04-DBMS-Specific/mssql.md)** — Stacked queries, error-based extraction via `CONVERT()`, and xp_cmdshell concepts.
 * **[Oracle Guide](04-DBMS-Specific/oracle.md)** — The mandatory `dual` table rules, string limitations, and OAST data exfiltration.
