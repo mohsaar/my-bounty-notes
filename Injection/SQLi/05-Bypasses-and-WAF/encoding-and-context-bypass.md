@@ -48,5 +48,5 @@ Encoding is one pillar of WAF evasion; it is commonly combined with:
 - **String-literal keyword fragmentation**: splitting a blacklisted keyword across concatenated string literals evaluated only at the database layer (`'UNI'||'ON SELECT'` — see `01-Fundamentals/02-string-concat-nuances.md`), functionally identical in principle to the XML-entity technique but implemented via SQL's own concatenation operator rather than a transport-layer encoding.
 ## Practical Lab Verification
  
-- [Lab 18 — SQL injection with filter bypass via XML encoding](../07-PortSwigger-Labs-Writeups/filter-bypass/lab-18-xml-encoding-filter-bypass.md)
+- [Lab 18 — SQL injection with filter bypass via XML encoding](https://portswigger.net/web-security/sql-injection/lab-sql-injection-with-filter-bypass-via-xml-encoding)
  
